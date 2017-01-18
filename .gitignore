@@ -1,0 +1,2 @@
+.vagrant/
+provision/playbooks/*.retry
