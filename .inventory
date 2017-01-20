@@ -1,0 +1,8 @@
+[control]
+controller ansible_host=192.168.10.2 ansible_user=vagrant
+
+[server]
+restapi ansible_host=192.168.10.3 ansible_user=vagrant
+
+[services:children]
+server
