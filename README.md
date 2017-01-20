@@ -13,7 +13,12 @@ Ansible 2.2.1
 
 ## How to:
 
+- run post-install configuration:
 ```
-vagrant ssh controller
-ansible-playbook /vagrant/playbooks/setup.yml
+vagrant ssh controller -c 'ansible-playbook /vagrant/playbooks/post_install.yml'
+```
+
+- setup services:
+```
+vagrant ssh controller -c 'ansible-playbook /vagrant/playbooks/setup_services.yml'
 ```
